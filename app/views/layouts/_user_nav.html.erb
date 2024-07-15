@@ -1,19 +1,29 @@
-<header class="w-full bg-slate-600">
-    <div data-controller="menu" class="w-full relative md:flex items-center gap-x-32 p-2">
-        <div>
-            <svg class="w-6 h-6 fill-orange-600 cursor-pointer hover:fill-red-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><
-            <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/></svg>
-        </div>
-        <nav id="navbar" class="hidden md:flex text-white items-center gap-x-2">
+<header class="w-full bg-slate-600 text-xs">
+    <div data-controller="menu" class="w-full relative md:flex items-center justify-between gap-x-32 p-2">
+        <div class="flex gap-x-4">
+            <div class="flex items-center gap-x-2 bg-white rounded-lg py-1 px-2">
+                <svg class="w-4 h-4 cursor-pointer fill-zinc-900 hover:fill-zinc-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <Span>ALL CATEGORIES</Span>
+            </div>
             <input 
             type="search"
             name="search" id="search" 
-            placeholder="search"
-            class="rounded-2xl outline-none border-none"
+            placeholder="search for a product"
+            class="rounded-lg outline-none border-none"
             >
-            <ul class="md:flex gap-x-2">
-                <li>Home</li>
-                <li>Categories</li>
+        </div>
+        <nav id="navbar" class="hidden md:flex text-white items-center gap-x-2">
+            <ul class="md:flex gap-x-2 items-center">
+                <li class="flex gap-x-1 items-center">
+                    <svg class="w-4 h-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20h44v44c0 11 9 20 20 20s20-9 20-20V180h44c11 0 20-9 20-20s-9-20-20-20H356V96c0-11-9-20-20-20s-20 9-20 20v44H272c-11 0-20 9-20 20z"/>
+                    </svg>
+                    <span>MY CART</span>
+                    <span>0</span>
+                </li>
+                <li>ACCOUNT</li>
             </ul>
         </nav>
         <svg data-action="click->menu#toggle" class="absolute top-2 right-3 sm:hidden w-6 h-6 cursor-pointer fill-gray-300 hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
