@@ -14,8 +14,10 @@
   <body>
     <main>
       <%= render "layouts/user_nav" %>
-      <%= render "layouts/side_nav" %>
-      <%= yield %>
+      <div class="flex">
+        <%= render "layouts/side_nav" %>
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
