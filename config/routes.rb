@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "root#index"
   resources :non_fictions, only: %i[index]
+  resources :children_young_adults, only: %i[index]
 end
