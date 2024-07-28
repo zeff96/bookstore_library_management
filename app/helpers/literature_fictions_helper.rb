@@ -1,0 +1,2 @@
+module LiteratureFictionsHelper
+end
