@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   root "root#index"
   resources :non_fictions, only: %i[index]
   resources :children_young_adults, only: %i[index]
+  resources :education_softwares, only: %i[index]
+  resources :literature_fictions, only: %i[index]
 end
