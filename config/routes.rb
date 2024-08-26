@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :academic_professionals, only: %i[index]
   resources :business_managements, only: [:index]
   resources :history_politics, only: %i[index]
+  resources :blogs, only: %i[index]
 end
