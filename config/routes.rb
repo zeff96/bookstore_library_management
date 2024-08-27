@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   resources :business_managements, only: [:index]
   resources :history_politics, only: %i[index]
   resources :blogs, only: %i[index]
+  resources :pages,only: %i[index]
 end
