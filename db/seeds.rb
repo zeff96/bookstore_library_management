@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+20.times do |_i|
+  Book.create!(image: Faker::LoremFlickr.image, title: Faker::Book.title, author: Faker::Book.author, category: "non fiction")
+end
