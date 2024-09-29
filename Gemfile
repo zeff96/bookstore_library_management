@@ -72,3 +72,4 @@ end
 # Use font awesome
 gem "font-awesome-rails"
 gem 'devise', '~> 4.9', '>= 4.9.4'
+gem "faker"
