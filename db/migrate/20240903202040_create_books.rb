@@ -3,7 +3,7 @@ class CreateBooks < ActiveRecord::Migration[7.1]
     create_table :books do |t|
       t.string :image
       t.string :title
-      t.string :author
+      t.decimal :price, precision: 10, scale: 2
       t.string :category
 
       t.timestamps
