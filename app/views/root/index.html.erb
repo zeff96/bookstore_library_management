@@ -1,4 +1,19 @@
-<div>
-  <h1 class="font-bold text-4xl">Root#index</h1>
-  <p>Find me in app/views/root/index.html.erb</p>
+<div class="ms-3">
+  <div>
+    <div class="flex items-center gap-x-4">
+      <h2 class="text-xl">Best Sellers</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consectetur.</p>
+    </div>
+    <div>
+      <ul class="flex">
+        <% @books.each do |book| %>
+          <li>
+            <%= image_tag book.image %>
+            <h2><%= book.title %></h2>
+            <p><%= book.price %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </div>
