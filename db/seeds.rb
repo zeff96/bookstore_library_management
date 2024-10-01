@@ -9,5 +9,5 @@
 #   end
 
 20.times do |_i|
-  Book.create!(image: Faker::LoremFlickr.image, title: Faker::Book.title, author: Faker::Book.author, category: "non fiction")
+  Book.create!(image: Faker::LoremFlickr.image, title: Faker::Book.title, price: Faker::Number.decimal(l_digits: 2), category: "non fiction")
 end
